@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftDecoderSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w8q-jG-S0q"/>
+                        <viewControllerLayoutGuide type="bottom" id="4t9-aY-fde"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEj-rV-Vdr">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYp-k9-qPK">
+                                        <rect key="frame" x="100" y="471" width="175" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="1Uh-MQ-U6u"/>
+                                            <constraint firstAttribute="width" constant="175" id="SoD-th-cUG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Scan View Controller">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="scanViewControllerButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbP-8U-8eI"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Ks7-Vt-egi">
+                                        <rect key="frame" x="15" y="20" width="128" height="119"/>
+                                        <color key="backgroundColor" red="0.89576256789999997" green="0.89576256789999997" blue="0.89576256789999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="119" id="XQi-va-P6S"/>
+                                            <constraint firstAttribute="width" constant="128" id="szx-30-esb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Data: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="YyN-qz-TAs">
+                                        <rect key="frame" x="15" y="153" width="308" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Symbology:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cb7-wG-51c">
+                                        <rect key="frame" x="15" y="180" width="308" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="htc-pa-Wdq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Length: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yJM-Ng-iFE">
+                                        <rect key="frame" x="15" y="197" width="308" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="YcW-WX-jId"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Decode Time: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="joB-Uq-A2I">
+                                        <rect key="frame" x="15" y="215" width="308" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="VQk-Jl-GBd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOU-yK-KrY">
+                                        <rect key="frame" x="100" y="524" width="175" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="7Qs-pa-IyX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Scan Component">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="scanComponentButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pmW-MJ-276"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="EYp-k9-qPK" firstAttribute="leading" secondItem="mOU-yK-KrY" secondAttribute="leading" id="9LK-Zy-RuY"/>
+                                    <constraint firstItem="yJM-Ng-iFE" firstAttribute="top" secondItem="YyN-qz-TAs" secondAttribute="bottom" constant="23" id="EPA-n7-DAQ"/>
+                                    <constraint firstItem="cb7-wG-51c" firstAttribute="trailing" secondItem="yJM-Ng-iFE" secondAttribute="trailing" id="Ed9-8y-qqF"/>
+                                    <constraint firstItem="Ks7-Vt-egi" firstAttribute="leading" secondItem="sEj-rV-Vdr" secondAttribute="leading" constant="15" id="GaP-Gv-Gem"/>
+                                    <constraint firstItem="Ks7-Vt-egi" firstAttribute="top" secondItem="sEj-rV-Vdr" secondAttribute="top" constant="20" id="KEc-cj-GF9"/>
+                                    <constraint firstItem="EYp-k9-qPK" firstAttribute="centerX" secondItem="sEj-rV-Vdr" secondAttribute="centerX" id="N4h-90-4cE"/>
+                                    <constraint firstItem="yJM-Ng-iFE" firstAttribute="leading" secondItem="joB-Uq-A2I" secondAttribute="leading" id="Qpb-ue-hYw"/>
+                                    <constraint firstItem="yJM-Ng-iFE" firstAttribute="trailing" secondItem="joB-Uq-A2I" secondAttribute="trailing" id="TGU-CI-8A9"/>
+                                    <constraint firstItem="YyN-qz-TAs" firstAttribute="top" secondItem="Ks7-Vt-egi" secondAttribute="bottom" constant="14" id="Tq7-4D-3il"/>
+                                    <constraint firstItem="YyN-qz-TAs" firstAttribute="leading" secondItem="cb7-wG-51c" secondAttribute="leading" id="XW7-xy-nzq"/>
+                                    <constraint firstItem="cb7-wG-51c" firstAttribute="top" secondItem="YyN-qz-TAs" secondAttribute="bottom" constant="6" id="aCh-tC-yvU"/>
+                                    <constraint firstItem="YyN-qz-TAs" firstAttribute="leading" secondItem="Ks7-Vt-egi" secondAttribute="leading" id="ceE-Xg-YE5"/>
+                                    <constraint firstAttribute="trailing" secondItem="YyN-qz-TAs" secondAttribute="trailing" constant="52" id="dou-Us-eWq"/>
+                                    <constraint firstAttribute="bottom" secondItem="mOU-yK-KrY" secondAttribute="bottom" constant="79" id="eGZ-7Z-tap"/>
+                                    <constraint firstItem="EYp-k9-qPK" firstAttribute="trailing" secondItem="mOU-yK-KrY" secondAttribute="trailing" id="f73-nM-kWo"/>
+                                    <constraint firstItem="joB-Uq-A2I" firstAttribute="top" secondItem="cb7-wG-51c" secondAttribute="bottom" constant="14" id="ok7-CI-HN9"/>
+                                    <constraint firstItem="mOU-yK-KrY" firstAttribute="top" secondItem="EYp-k9-qPK" secondAttribute="bottom" constant="9" id="qDR-wg-8Ux"/>
+                                    <constraint firstItem="YyN-qz-TAs" firstAttribute="trailing" secondItem="cb7-wG-51c" secondAttribute="trailing" id="s1L-YG-o6q"/>
+                                    <constraint firstItem="cb7-wG-51c" firstAttribute="leading" secondItem="yJM-Ng-iFE" secondAttribute="leading" id="yU9-a6-hTg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sEj-rV-Vdr" firstAttribute="bottom" secondItem="4t9-aY-fde" secondAttribute="top" id="1jc-rv-bsJ"/>
+                            <constraint firstItem="sEj-rV-Vdr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CHa-75-d4p"/>
+                            <constraint firstAttribute="trailing" secondItem="sEj-rV-Vdr" secondAttribute="trailing" id="UCe-Y9-hAx"/>
+                            <constraint firstItem="sEj-rV-Vdr" firstAttribute="top" secondItem="w8q-jG-S0q" secondAttribute="bottom" id="dXb-jF-bgo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barcodeDataLabel" destination="YyN-qz-TAs" id="vva-wA-UKK"/>
+                        <outlet property="barcodeImageView" destination="Ks7-Vt-egi" id="Gr0-UU-H54"/>
+                        <outlet property="decodeTimeLabel" destination="joB-Uq-A2I" id="PEP-VP-TE1"/>
+                        <outlet property="lengthLabel" destination="yJM-Ng-iFE" id="Rmn-Wr-YN8"/>
+                        <outlet property="scanComponentButton" destination="mOU-yK-KrY" id="8dI-AA-BOo"/>
+                        <outlet property="scanViewControllerButton" destination="EYp-k9-qPK" id="7h3-fv-ldN"/>
+                        <outlet property="symbologyLabel" destination="cb7-wG-51c" id="JhW-S4-pxS"/>
+                    </connections>
+                </viewController>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kWh-8l-dl4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r2-js-4oC">
+                            <rect key="frame" x="73" y="457" width="175" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Scan View Controller">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="scanViewControllerButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KiV-Ly-fEs"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pXT-Pd-kjv">
+                            <rect key="frame" x="6" y="6" width="128" height="119"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.89576256789999997" green="0.89576256789999997" blue="0.89576256789999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Data: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="2t3-eK-rbK">
+                            <rect key="frame" x="6" y="126" width="308" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Symbology:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="HdM-Fs-cCe">
+                            <rect key="frame" x="6" y="153" width="308" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Length: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="rEP-9E-vc0">
+                            <rect key="frame" x="6" y="170" width="308" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Decode Time: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wmy-V5-heC">
+                            <rect key="frame" x="6" y="188" width="308" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8L-Xd-YSE">
+                            <rect key="frame" x="73" y="510" width="175" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Scan Component">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="scanComponentButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BGD-26-zSG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
