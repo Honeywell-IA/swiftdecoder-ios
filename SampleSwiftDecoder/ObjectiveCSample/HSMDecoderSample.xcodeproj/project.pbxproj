@@ -389,7 +389,7 @@
 				GCC_PREFIX_HEADER = "HSMDecoderSample/HSMDecoderSample-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "HSMDecoderSample/HSMDecoderSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks /usr/lib/swift";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,7 +422,7 @@
 				GCC_PREFIX_HEADER = "HSMDecoderSample/HSMDecoderSample-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "HSMDecoderSample/HSMDecoderSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks /usr/lib/swift";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
