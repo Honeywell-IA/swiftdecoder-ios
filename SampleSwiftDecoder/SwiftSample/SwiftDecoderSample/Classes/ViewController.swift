@@ -70,7 +70,7 @@ class ViewController: UIViewController, ActivationResponseListener,DecodeResultL
             
             let alert: UIAlertController = UIAlertController.init(title: nil, message: message, preferredStyle: UIAlertControllerStyle.alert)
             
-            let okAction = UIAlertAction.init(title: "OK", style: UIAlertActionStyle.default, handler: okActionHandler);
+            let okAction = UIAlertAction.init(title: "OK", style: UIAlertActionStyle.default, handler: self.okActionHandler);
             alert.addAction(okAction)
             
             self.present(alert, animated: true,completion: nil)
