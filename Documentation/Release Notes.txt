@@ -1,3 +1,7 @@
+Version 6.5
+Date 2025-12-24
+Open SSL symbol conflict issue resolved
+
 Version 6.0.11
 Date 2024-10-09
 - Added simulator support for SwiftOCR
